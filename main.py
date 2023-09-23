@@ -20,9 +20,16 @@ page_bg_img = """
 body {
 background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
 background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+height: 100%;
+margin: 0;
+}
+html {
+height: 100%;
 }
 </style>
-"""
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
@@ -60,4 +67,4 @@ elif st.session_state.page in PAGES:
     PAGES[st.session_state.page]()
 
 # Display the Lottie animation at the end
-st_lottie(lottie_json, width=30 , height=20)
+st_lottie(lottie_json, width=30, height=20)
