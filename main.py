@@ -60,4 +60,4 @@ elif st.session_state.page in PAGES:
     PAGES[st.session_state.page]()
 
 # Display the Lottie animation at the end
-st_lottie(lottie_json, width=200, height=200)
+st_lottie(lottie_json, width=30 , height=20)
